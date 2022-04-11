@@ -1,3 +1,5 @@
+const log = console.log;
+
 /** Practice conditionals
  *
  * Take user name and language as input (declare two variables)
@@ -7,9 +9,33 @@
  */
 
 
-const language = "English"
-// const name = ... <- Complete here and keep wriritng your code below
+const language = "French"
+const userName = 'Lois Lane';
 
 // 1: if...else - simple solution
 
+if (language === 'English'){
+    log(`Hey ${userName} Welcome to our portal!`)
+} else if (language === 'French'){
+    log(`Salut ${userName} Bienvenue a notre portal!`)
+} else if (language === 'Spanish'){
+    log(`Hey ${userName} Bienvenid@ a nuestro portal!`)
+} else {
+    log(`Sorry ${userName} I am not sure what are you trying to do! 🍺`)
+}
+
 // 2: switch
+
+switch(language) {
+    case 'English':
+        log(`Hey ${userName} Welcome to our portal!`)
+        break;
+    case 'French':
+        log(`Salut ${userName} Bienvenue a notre portal!`)
+        break;
+    case 'Spanish':
+        log(`Hey ${userName} Bienvenid@ a nuestro portal!`)
+        break;
+    default:
+        log(`Sorry ${userName} I am not sure what are you trying to do! 🍺`)
+}
