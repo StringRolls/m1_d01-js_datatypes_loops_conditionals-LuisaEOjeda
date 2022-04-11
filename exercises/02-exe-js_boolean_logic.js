@@ -4,11 +4,11 @@
 
 let x = 5;
 let y = "5";
-console.log(`What is this: ${x == y}`); // ==> ??
+console.log(`What is this: ${x == y}`); // ==> TRUE
 
 // === compares using value and type (strict equality)
 
-console.log(`What is this: ${x === y}`); // ==> ??
+console.log(`What is this: ${x === y}`); // ==> FALSE
 
 // falsy values - will evaluate as FALSE
 // - false
@@ -28,7 +28,7 @@ console.log(`What is this: ${x === y}`); // ==> ??
 
 // Guess the output
 if('false') `Passed thingy is truthy`
-else `Passed thingy is falsy` // => ??
+else `Passed thingy is falsy` // => FALSE
 
 // Guess the output
 if(true || false){
@@ -38,9 +38,9 @@ if(true || false){
 }
 
 // Write down what will these statements return:
-console.log(true && false); // ==> ??
-console.log(11 % 3 === 2); // ==> ??
-console.log(false || true); // ==> ??
-console.log(!true || false); // ==> ??
-console.log(17 == '17'); // ==> ??
-console.log(123 === '123'); // ==> ??
+console.log(true && false); // ==> false
+console.log(11 % 3 === 2); // ==> true
+console.log(false || true); // ==> true
+console.log(!true || false); // ==> false
+console.log(17 == '17'); // ==> true
+console.log(123 === '123'); // ==> false
