@@ -40,14 +40,14 @@ city = "berlin";
 console.log(city); // <== berlin
 
 city[0] = "B";
-console.log(city); // ==> ??
+console.log(city); // ==> berlin
 
 const message = "Don't be sad, be happy!";
 console.log(message.slice(0,3, "don"));
 console.log(message); // ==> ??
 
 const statement = 'I love JavaScript!';
-const subStatement = statement.substr(2, 9);
+const subStatement = statement.substring(2, 9);
 console.log(statement);
 
 statement[0].toLowerCase();

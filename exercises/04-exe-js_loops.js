@@ -1,10 +1,23 @@
+const log = console.log
 // Practice loops
   
   // 1: Use any loop. Given the iterable let str='hello,dear.friend! nice,to.see you!', 
   // replace each dot and comma with space. The final output should be: hello dear friend! nice to see you!.
   
   let str = 'hello,dear.friend! nice,to.see you!'
-  
+  let spacedStr = "";
+
+  /*
+  for (let i = 0; i < str.length; i++){
+    if(str[i] === ',' || str[i] === '.'){
+      str.replace(',', ' ')
+    }
+  spacedStr =+ str[i]
+  }
+
+log(spacedStr)
+  */
+
 // 2. Loop from 0 to 15 with the conditions:
 // For every number that is divisible by 3 output ‘Fizz’ in the console
 // For every number that is divisible by 5 output ‘Buzz’ in the console
